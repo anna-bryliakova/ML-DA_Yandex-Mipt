@@ -1,0 +1,29 @@
+﻿<title>Flask Bootstrap Sentiment Analysis Demo</title>
+        	 	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+                        
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<form action="" method="post" >
+
+
+  
+<div class="form-group">
+
+<label for="exampleInputText" class="container-fluid p-3 mb-2 bg-info text-white" style="width:100%" > <h2> <p class="text-center"> Анализ тональности отзывов на мобильные телефоны</p> </h2></label>
+
+<div class="container">
+
+<center>      
+<textarea class="form-control" id="text" name="text" rows="8" placeholder="Пожалуйста, напишите здесь Ваш отзыв" required> {{ text }}</textarea>
+<div class="help-block with-errors"></div>
+</center>
+<center> <button type="submit" class="m-3 btn btn-primary" >Оценить</button> </center>
+
+
+</form>
+<center><div class="alert alert-primary">
+                
+     <br><h5> {{ prediction_message }}</h5><br></div></center>
+</div>
